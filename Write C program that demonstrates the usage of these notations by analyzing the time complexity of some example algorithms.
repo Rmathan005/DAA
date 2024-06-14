@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n = 10;
+
+    
+    printf("Constant Time Complexity (O(1))\n");
+
+    
+    printf("Linear Time Complexity (O(n))\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+   
+    printf("Quadratic Time Complexity (O(n^2))\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("(%d, %d) ", i, j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
